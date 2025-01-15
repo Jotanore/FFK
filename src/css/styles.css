@@ -18,14 +18,23 @@ body{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
-                padding: 1em;
-                               
+                padding: 0.5em;       
                 li{
+                    padding: 0.5em;
                     font-size: 20px;
+
+                    &.active,
+                    &:hover {
+                        background-color: rgb(30, 30, 30);
+                        border-color: rgb(30, 30, 30);
+                        color: white;
+                      }
                 }
             }
         }
     }
+
+   
 
     main{
         display:grid;
@@ -39,9 +48,6 @@ body{
                         width: 100%;
                         border: 1px solid black;
                     }
-
-
-
 
                     ul{
                         li{
@@ -63,3 +69,4 @@ body{
 .hidden{
     display: none;
 }
+
