@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(251, 255, 137);
+
+    header{
+        margin-top: 15px;
+        background-color: aqua;
+        h1{
+            padding: 1em;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            background-color: aquamarine;
+        }
+
+        nav{
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding: 1em;
+                               
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    main{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+            article{
+                grid-column-start: 2;
+            }
+    }
+}
