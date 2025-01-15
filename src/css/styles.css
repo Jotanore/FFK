@@ -39,14 +39,35 @@ body{
     main{
         display:grid;
         grid-template-columns: 15% 1fr 15%;
-
+        margin-bottom: 1em;
             article{
                 background-color: rgb(100, 100, 100);
                 grid-column-start: 2;
 
                     table{
+
                         width: 100%;
-                        border: 1px solid black;
+                        border: 5px solid black;
+                        overflow: hidden;
+
+                        thead{
+
+                            tr{
+                                
+                                th{
+                                    padding: 1em 0;
+                                }
+                            }
+                        }
+                        tbody{
+                            tr{
+                                td{
+                                    text-align: center;
+                                    padding: 1em 0;
+                                    border: 1px solid black;
+                                }
+                            }
+                        }
                     }
 
                     ul{
@@ -64,7 +85,37 @@ body{
                 
             }
     }
+
+    footer{
+        background-color: black;
+        color: white;
+        display:flex;
+        justify-content: center;
+        padding: 1em;
+    }
+
 }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 100px;
+    list-style: none;
+    padding: 0;
+    z-index: 1000;
+
+}
+
+.menu ul li:hover > .dropdown-menu {
+    display: block;
+  }
+
+.menu ul li {
+    position: relative;
+  }
 
 .hidden{
     display: none;
