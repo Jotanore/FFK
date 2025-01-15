@@ -1,15 +1,16 @@
 body{
-    background-color: rgb(251, 255, 137);
+    background-color: rgb(234, 234, 234);
 
     header{
-        margin-top: 15px;
-        background-color: aqua;
+        margin-bottom: 1em;
+        background-color: rgb(129, 129, 129);
         h1{
             padding: 1em;
             font-size: 40px;
             display: flex;
             justify-content: center;
-            background-color: aquamarine;
+            background-color: rgb(0, 0, 0);
+            color: rgb(152, 136, 11);
         }
 
         nav{
@@ -28,9 +29,37 @@ body{
 
     main{
         display:grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 15% 1fr 15%;
+
             article{
+                background-color: rgb(100, 100, 100);
                 grid-column-start: 2;
+
+                    table{
+                        width: 100%;
+                        border: 1px solid black;
+                    }
+
+
+
+
+                    ul{
+                        li{
+                            label{
+                                background-color: rgb(30, 30, 30);
+                                color:darkgoldenrod;
+                            }
+                            padding: 12px;
+                            ul{
+                                background-color: rgb(216, 216, 216);
+                            }
+                        }
+                }
+                
             }
     }
+}
+
+.hidden{
+    display: none;
 }
