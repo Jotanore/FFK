@@ -38,7 +38,7 @@ body{
 
     main{
         display:grid;
-        grid-template-columns: 15% 1fr 15%;
+        grid-template-columns: 20% 1fr 20%;
         margin-bottom: 1em;
             article{
                 background-color: rgb(100, 100, 100);
@@ -63,10 +63,26 @@ body{
                             tr{
                                 td{
                                     text-align: center;
-                                    padding: 1em 0;
-                                    border: 1px solid black;
+                                    vertical-align: middle;
+                                    padding: 0.5em 0;
+                                    border: 1px solid rgb(0, 0, 0);
+
+                                    &.teamicons{
+                                        width:0%;
+                                    }
+
+                                    
+                                    img{
+                                        max-height: 50px;
+                                    }
                                 }
                             }
+                        }
+                        &#stand{
+                            background-color:aqua;
+                        }
+                        &#res{
+                            background-color:rgb(73, 179, 28);
                         }
                     }
 
@@ -121,3 +137,12 @@ body{
     display: none;
 }
 
+@media screen and (max-width:1024px){
+    body{
+        main{
+            grid-template-columns: 10% 1fr 10%;
+        }
+    }
+    
+    
+}
